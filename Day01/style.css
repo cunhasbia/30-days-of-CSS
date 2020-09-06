@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-icons {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+
+.ul-icons li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);
+    position: relative;
+}
+
+.ul-icons li span {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: .5s;
+    color: #fff;
+    font-size: 30px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.ul-icons li:hover span {
+    box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+}
+
+.ul-icons li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.ul-icons li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+
+.ul-icons li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+
+.ul-icons li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+
+.ul-icons li:hover span:nth-child(1) {
+    transform: translate(0,0);
+    opacity: .2;
+}
+
+.ul-icons li:nth-child(1) span {
+    background-color: #0077B5;
+}
+
+.ul-icons li:nth-child(2) span {
+    background-color: #25D366;
+}
+
+.ul-icons li:nth-child(3) span {
+    background-color: #3B5999;
+}
+
+.ul-icons li:nth-child(4) span {
+    background-color: #55ACEE;
+}
+
+.ul-icons li:nth-child(5) span {
+    background-image: linear-gradient(to top, #FED975 , #FA7F1E, #D72976, #9630BE, #4F5CD5);
+}
