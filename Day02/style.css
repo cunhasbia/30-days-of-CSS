@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+#container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.text, .spinner {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.text {
+    text-align: center;
+    line-height: 14rem;
+    font-size: 1.5rem;
+    color: purple;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    position: absolute;
+}
+
+.spinner {
+    box-shadow: 0 5px 0 purple;
+    animation: spinner infinite .8s linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
