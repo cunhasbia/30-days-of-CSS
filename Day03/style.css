@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.slide-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.slide-container:nth-child(1) {
+    width: 50%;
+    overflow: hidden;
+    background-image: url('./img/background.jfif');
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+    position: relative;
+}
+
+.slide-container:nth-child(1) .slide-text {
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+    left: 100%;
+}
+
+.slide-container:nth-child(2) {
+    width: 50%;
+    overflow: hidden;
+    background-color: #7F3FBF;
+    position: relative;
+}
+
+.slide-text {
+    font-size: 10rem;
+    line-height: 60vh;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
