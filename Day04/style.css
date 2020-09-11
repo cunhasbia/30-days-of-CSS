@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 230px;
+    height: 65px;
+    border: 4px solid;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #7F3FBF;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+}
+
+.button::before, .button::after {
+    width: 14px;
+    height: 4px;
+    background-color: black;
+    transform: skewX(50deg);
+    transition: .3s linear;
+    content: "";
+    position: absolute;
+}
+
+.button::before {
+    top: -4px;
+    left: 10%;
+}
+
+.button::after {
+    bottom: -4px;
+    right: 10%;
+}
+
+.button:hover {
+    background: transparent;
+}
+
+.button:hover::before {
+    left: 80%;
+}
+
+.button:hover::after {
+    right: 80%;
+}
